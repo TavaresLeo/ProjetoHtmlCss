@@ -1,132 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobFinder</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/320861b36c.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-    <div class="container">
-        <header>
-            <nav>
-                <div class="nav-container">
-                    <img id="logo" src="img/logo.png" alt="JobFinder">
-                    <ul>
-                       <li><a href="#">Encontrar vagas</a></li>
-                       <li><a href="#">Enviar vagas</a></li>
-                       <li><a href="#">Contatos</a></li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JobFinder</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/320861b36c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="nav-container">
+                        <img id="logo" src="img/logo.png" alt="JobFinder">
+                        <ul>
+                            <li><a href="#">Encontrar vagas</a></li>
+                            <li><a href="#">Enviar vagas</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="main-banner">
+                    <div id="search-form">
+                        <h1>A maneira mais fácil de encontrar o seu novo emprego.</h1>
+                        <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus Sonhos.</p>
+                        <form>
+                            <input text="text" name="job" placeholder="Digite o cargo">
+                            <select name="region">
+                                <option value=""> Todos os estados</option>
+                            </select>
+                            <select name="category">
+                                <option value="">Categoria</option>
+                            </select>
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </div>
                 </div>
-            </nav>
-            <div id="main-banner">
-                <div id="search-form">
-                    <h1>A maneira mais fácil de encontrar o seu novo emprego.</h1>
-                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus Sonhos.</p>
-                    <form>
-                        <input text="text" name="job" placeholder="Digite o cargo">
-                        <select name="region">
-                            <option value=""> Todos os estados</option>
-                        </select>
-                        <select name="category">
-                            <option value="">Categoria</option>
-                        </select>
-                        <input type="submit" value="Pesquisar">
-                    </form>
+            </header>
+            <main id="lastjobs-container" class="wrapper">
+                <h1>Últimas vagas enviadas</h1>
+                <ul>
+                    <li>
+                        <a href="#" class="clickarea">
+                            <div class="company-box">
+                                <img src="img/googlelogo.png">
+                                <div class="company-info">
+                                    <h3>Developer</h3>
+                                    <p>Google</p>
+                                </div>
+                            </div>
+                            <div class="locality">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Mountain View, California</p>
+                            </div>
+                            <div class="job-type">
+                                <span class="clt"> CLT</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="clickarea">
+                            <div class="company-box">
+                                <img src="img/ibmlogo.png">
+                                <div class="company-info">
+                                <h3>DBA</h3>
+                                <p>IBM</p>
+                                </div>
+                            </div>
+                            <div class="locality">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Armonk, New York</p>
+                            </div>
+                            <div class="job-type">
+                                <span class="pj">PJ</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="clickarea">
+                            <div class="company-box">
+                                <img src="img/linkedinlogo.png">
+                                <div class="company-info">
+                                    <h3>Front End Developer</h3>
+                                    <p>Linkedin</p>
+                                </div>
+                            </div>
+                            <div class="locality">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Sunnyvale, Califórnia</p>
+                            </div>
+                            <div class="job-type">
+                                <span class="homeoffice">Home Office</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="clickarea">
+                            <div class="company-box">
+                                <img src="img/facebooklogo.png">
+                                <div class="company-info">
+                                    <h3>Full Stack Developer</h3>
+                                    <p>Facebook</p>
+                                </div>
+                            </div>
+                            <div class="locality">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Menlo Park, California</p>
+                            </div>
+                            <div class="job-type">
+                                <span class="clt">PJ</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btnjobs-container">
+                    <a href="#" class="btn-jobs">Ver mais vagas</a>
                 </div>
-            </div>
-        </header>
-        <main id="lastjobs-container" class="wrapper">
-            <h1>Últimas vagas enviadas</h1>
-            <ul>
-                <li>
-                    <a href="#" class="clickarea">
-                        <div class="company-box">
-                            <img src="img/googlelogo.png">
-                            <div class="company-info">
-                            <h3>Developer</h3>
-                            <p>Google</p>
-                            </div>
-                        </div>
-                        <div class="locality">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Mountain View, California</p>
-                        </div>
-                        <div class="job-type">
-                            <span class="clt"> CLT</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="clickarea">
-                        <div class="company-box">
-                            <img src="img/ibmlogo.png">
-                            <div class="company-info">
-                            <h3>DBA</h3>
-                            <p>IBM</p>
-                            </div>
-                        </div>
-                        <div class="locality">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Armonk, New York</p>
-                        </div>
-                        <div class="job-type">
-                            <span class="pj">PJ</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="clickarea">
-                        <div class="company-box">
-                            <img src="img/linkedinlogo.png">
-                            <div class="company-info">
-                            <h3>Front End Developer</h3>
-                            <p>Linkedin</p>
-                            </div>
-                        </div>
-                        <div class="locality">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Sunnyvale, Califórnia</p>
-                        </div>
-                        <div class="job-type">
-                            <span class="homeoffice">Home Office</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="clickarea">
-                        <div class="company-box">
-                            <img src="img/facebooklogo.png">
-                            <div class="company-info">
-                            <h3>Full Stack Developer</h3>
-                            <p>Facebook</p>
-                            </div>
-                        </div>
-                        <div class="locality">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Menlo Park, California</p>
-                        </div>
-                        <div class="job-type">
-                            <span class="clt">PJ</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">Ver mais vagas</a>
-            </div>
-        </main>
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>Envie uma vaga que será vista por milhares de candidatos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus nisi in enim gravida, sit amet ornare sapien placerat. Sed vitae faucibus nunc, euismod dictum dolor. Nullam lobortis, mauris ac porttitor maximus, nulla nulla bibendum nisi, sit amet vehicula odio ligula vel eros. Vestibulum lobortis vestibulum dictum. Nullam in justo massa. Praesent auctor nulla a ullamcorper faucibus. Quisque dignissim massa eu ipsum molestie, sed mollis ex tincidunt. Donec ultrices sapien nec ligula luctus maximus. Nulla at placerat ligula, ut maximus orci. Donec egestas odio sed faucibus malesuada.</p>
-                <a href="#" class="light-btn">Enviar vaga</a>
-            </div>
-        </section>
-    </div>
-</body>
+            </main>
+            <section id="sendjobs-container">
+                <div id="sendjobs-inner" class="wrapper">
+                    <h2>Envie uma vaga que será vista por milhares de candidatos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus nisi in enim gravida, sit amet ornare sapien placerat. Sed vitae faucibus nunc, euismod dictum dolor. Nullam lobortis, mauris ac porttitor maximus, nulla nulla bibendum nisi, sit amet vehicula odio ligula vel eros. Vestibulum lobortis vestibulum dictum. Nullam in justo massa. Praesent auctor nulla a ullamcorper faucibus. Quisque dignissim massa eu ipsum molestie, sed mollis ex tincidunt. Donec ultrices sapien nec ligula luctus maximus. Nulla at placerat ligula, ut maximus orci. Donec egestas odio sed faucibus malesuada.</p>
+                    <a href="#" class="light-btn">Enviar vaga</a>
+                    </div>
+            </section>
+            <section id="status-container" class="wrapper">
+                <h2 claass="title-center">Estatísticas do JobFinder</h2>
+                <p class="p-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus nisi in enim gravida, sit amet ornare sapien placerat. Sed vitae faucibus nunc, euismod dictum dolor. Nullam lobortis, mauris ac porttitor maximus, nulla nulla bibendum nisi, sit amet vehicula odio ligula vel eros.</p>
+                <div>
+                    <div class="status-box">
+                        <span class="status-qtd">150</span>
+                        <p class="status-text">Vagas abertas</p>
+                    </div>
+                    <div class="status-box">
+                        <span class="status-qtd">250</span>
+                        <p class="status-text">Candidatos contratados</p>
+                    </div>
+                        <div class="status-box">
+                        <span class="status-qtd">50</span>
+                        <p class="status-text">Empresas participantes</p>
+                    </div>
+                    <div class="status-box">
+                        <span class="status-qtd">550</span>
+                        <p class="status-text">Candidatos</p>
+                    </div>
+                </div>
+            </section>
+            <section id="testmony-container">
+                <div class="wrapper">
+                    <h2>Veja o que os candidatos dizem</h2>
+                    <p class="p-center">Lorem ipsum dolor sit amet, consectetur adipiscing . Nullam lobortis, mauris ac porttitor maximus. Vestibulum lobortis vestibulum dictum. Nullam in justo massa. Morbi rhoncus nisi in enim gravida, sit amet ornare sapien placerat. Sed vitae faucibus nunc, euismod dictum dolor. Nullam lobortis, mauris ac porttitor maximus, nulla nulla bibendum nisi, sit amet vehicula odio ligula vel eros. Vestibulum lobortis vestibulum dictum. Nullam in justo massa. Praesent auctor nulla a ullamcorper faucibus. Quisque dignissim massa eu ipsum molestie, sed mollis ex tincidunt. Donec ultrices sapien nec ligula luctus maximus. Nulla at placerat ligula, ut maximus orci. Donec egestas odio sed faucibus malesuada.</p>
+                    <div class="testmony-box">
+                        <p class="testmony-msg">Lot ornare  Nullam lobortis, mauris ac porttitor maximus, nulla nulla bibendum nisi, sit amet vehicula odio ligula vel erosur adipiscing elit.Nullam lobortis, mauris ac porttitor maximus consectetur adipiscing elit.</p>
+                        <img src='img/avatar1.png'>
+                        <p class="testmony-name">João</p>
+                    </div>
+                    <div class="testmony-box">
+                        <p class="testmony-msg">LMorbi rhonauris ac eroselit.Vestibulum lobortis vestibulum dictum.</p>
+                        <img src='img/avatar2.png'>
+                        <p class="testmony-name">Maria</p>
+                    </div>
+                    <div class="testmony-box">
+                        <p class="testmony-msg">Lorem ipsum dolor sit aMorbi rhoncus nisi in enim gravida, Nullam lla nulla bibendum nisi, sit amet vehicula odio ligula vel eros consectetur adipiscing elit.Vestibulum lobortis vestibulum dictum.</p>
+                        <img src='img/avatar3.png'>
+                        <p class="testmony-name">Rafael</p>
+                    </div>
+                    <div class="testmony-box">
+                        <p class="testmony-msg"> Nullam lobortis, mauris ac porttitor maximus, nulla nulla bibendum nisi, sit amet vehicula odio ligula vel eroslobortis vestibulum dictum. consectetur adipiscing elit.</p>
+                        <img src='img/avatar4.png'>
+                        <p class="testmony-name">Joyce</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>
